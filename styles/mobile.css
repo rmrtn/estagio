@@ -1,0 +1,90 @@
+
+/*--------------------------*/
+/*  ELEMENTOS DO HEADER     */
+/*--------------------------*/
+@media screen and (max-width: 1200px) {
+    header{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url('../images/headerCapaM.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)) ,url('../images/headerCapaP.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+/*------- NAVEBAR ------------*/
+
+@media screen and (max-width: 1110px){
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+    header nav#nav-esquerda div#logo{
+        margin-left: 1rem;
+    }
+
+    /*-------- MENU HAMBURGUER -----------*/
+
+    header nav#nav-esquerda{
+        justify-content: space-between;
+    }
+
+    header nav#nav-esquerda ul#icone-menu{
+        display: flex;
+    }
+
+    header nav#nav-esquerda ul#icone-menu li#menuX{
+        display: none;
+    }   
+
+    /*-------- MENU -------------- */
+    header nav#nav-esquerda ul.menu-principal{
+        flex-direction: column;
+        width: 80%;
+        height: 70vh;
+        flex-direction: column;
+        background: linear-gradient(rgba(69,133,140) 0%, rgba(54,176,224) 45%, rgba(217,43,4) 100%);
+        padding-top: .5rem;
+
+        position: absolute;
+        top: 7rem;
+        right: 0;
+        z-index: 999;
+
+        display: none;
+    }
+
+    header nav#nav-esquerda ul.menu-principal li{
+        margin: .5rem;
+    }
+
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 120%;
+    }
+}
+
+/*--------------------------*/
+/*  ELEMENTOS DO FOOTER     */
+/*--------------------------*/
+@media screen and (max-width: 765px) {
+    footer div.footer-container div.footer-info{
+        width: 95%;
+    }
+
+    footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes{
+        max-width: 200px;
+    }
+}
+
+

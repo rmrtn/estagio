@@ -1,0 +1,187 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;  
+    overflow-y: auto;   
+  }  
+h1{
+    font-family:  Helvetica, sans-serif;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(44px, 5.2vw);
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+}
+
+/*  ELEMENTOS DO HEADER-CAPA     */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url('../images/fttvbox.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* NAVBAR AJUSTADA */
+header nav#nav-esquerda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+}
+
+/* LOGO COM TAMANHO FIXO E RESPONSIVO */
+#logo {
+    max-width: 100px;
+}
+#logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* MENU PRINCIPAL COM ALINHAMENTO HORIZONTAL */
+.menu-principal {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-principal li {
+    list-style: none;
+}
+
+.menu-principal li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* CHAMADA CENTRALIZADA */
+header .chamada {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+header .chamada h1,
+header .chamada h2 {
+    color: whitesmoke;
+    text-shadow: 3px 3px 6px #000;
+    margin: 0.5rem 0;
+}
+
+/*          SOBRE-TV BOX-CRIADORA-IMPORTANCIA          */
+section.sobre{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    background-color: gray;
+}
+section.sobre div.sobre-mestre{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #FFF;
+}
+section.sobre div.sobre-mestre img{
+    border: 4px solid white;
+}
+section.sobre div.sobre-mestre h2{
+    font-size: max(22px, 1.8vw);
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Além do horizente  */
+section.solucao{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    background-color: black;
+}
+section.solucao h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 950px;
+    text-align: center;
+    color: #FFF;
+    font-size: max(22px, 2.8vw);
+}
+section.solucao div.solucao-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section.solucao div.solucao-mestre div.solucao-texto{
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+section.solucao div.solucao-mestre div.solucao-texto p{
+    width: 95%;
+    margin: auto;
+    color: #FFF;
+    text-shadow: 2px 2px 5px #181717;
+    font-size: max(16px, 1vw);
+}
+section.solucao div.solucao-mestre div.solucao-img{
+    max-width: 400px;
+}
+section.solucao div.solucao-mestre div.solucao-img img{
+    max-width: 100%;
+}
+
+/*  SECTION MAKES-ETAPAS      */
+section.makes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    background-color: gray;
+    color: #FFF;
+}
+section.makes h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 850px;
+    font-size: max(22px, 2.8vw);
+    text-align: center;
+    color: white;
+}
