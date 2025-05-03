@@ -23,7 +23,6 @@ h2 {
     font-size: max(20px, 2.8vw);
 }
 
-/* ELEMENTOS DO HEADER-CAPA */
 header {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url('../images/fttvbox.jpg');
@@ -37,7 +36,6 @@ header {
     justify-content: space-between;
 }
 
-/* NAVBAR AJUSTADA */
 header nav#nav-esquerda {
     display: flex;
     justify-content: space-between;
@@ -46,7 +44,6 @@ header nav#nav-esquerda {
     padding: 0 2rem;
 }
 
-/* LOGO COM TAMANHO FIXO E RESPONSIVO */
 #logo {
     max-width: 100px;
 }
@@ -55,7 +52,6 @@ header nav#nav-esquerda {
     height: auto;
 }
 
-/* MENU PRINCIPAL COM ALINHAMENTO HORIZONTAL */
 .menu-principal {
     display: flex;
     gap: 2rem;
@@ -72,7 +68,6 @@ header nav#nav-esquerda {
     text-shadow: 2px 2px 5px #000;
 }
 
-/* CHAMADA CENTRALIZADA */
 header .chamada {
     flex: 1;
     display: flex;
@@ -90,7 +85,6 @@ header .chamada h2 {
     margin: 0.5rem 0;
 }
 
-/* SOBRE-TV BOX-CRIADORA-IMPORTANCIA */
 section.sobre {
     max-width: 100%;
     padding-top: 60px;
@@ -118,7 +112,6 @@ section.sobre div.sobre-mestre h2 {
     text-align: center;
 }
 
-/* Além do horizontes - seção solucao */
 section.solucao {
     width: 100%;
     display: flex;
@@ -173,7 +166,6 @@ section.solucao div.solucao-mestre div.solucao-img img {
     max-width: 100%;
 }
 
-/*  SECTION MAKES-ETAPAS */
 section.makes {
     width: 100%;
     display: flex;
@@ -185,7 +177,7 @@ section.makes {
     margin-bottom: 60px;
     border-top: 5px solid gray;
     border-bottom: 5px solid gray;
-    background-color: gray;
+    background-color: black;
     color: #FFF;
 }
 
@@ -239,7 +231,6 @@ section.makes .list-group-item i {
     color: #ffcc00;
 }
 
-/* Exemplo de ícones para as etapas */
 section.makes .list-group-item:nth-child(1) i::before {
     content: "\f0c0"; /* Ícone de cartão SD */
     font-family: "Font Awesome 5 Free";
@@ -255,7 +246,6 @@ section.makes .list-group-item:nth-child(3) i::before {
     font-family: "Font Awesome 5 Free";
 }
 
-/* Melhorar o bloco de código */
 section.makes .list-group-item code {
     background-color: #222;
     color: #d1ecf1;
@@ -267,7 +257,6 @@ section.makes .list-group-item code {
     word-wrap: break-word;
 }
 
-/* Animações */
 @keyframes fadeInUp {
     from {
         opacity: 0;
