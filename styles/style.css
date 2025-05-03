@@ -1,27 +1,29 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body, html {
-    overflow-x: hidden;  
-    overflow-y: auto;   
-  }  
-h1{
-    font-family:  Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
     text-shadow: 4px 4px 6px #000;
     font-weight: 700;
     font-size: max(44px, 5.2vw);
 }
-h2{
+
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 4px 4px 6px #000;
     font-weight: 700;
     font-size: max(20px, 2.8vw);
 }
 
-/*  ELEMENTOS DO HEADER-CAPA     */
+/* ELEMENTOS DO HEADER-CAPA */
 header {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url('../images/fttvbox.jpg');
@@ -88,8 +90,8 @@ header .chamada h2 {
     margin: 0.5rem 0;
 }
 
-/*          SOBRE-TV BOX-CRIADORA-IMPORTANCIA          */
-section.sobre{
+/* SOBRE-TV BOX-CRIADORA-IMPORTANCIA */
+section.sobre {
     max-width: 100%;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -99,22 +101,25 @@ section.sobre{
     border-bottom: 5px solid gray;
     background-color: gray;
 }
-section.sobre div.sobre-mestre{
+
+section.sobre div.sobre-mestre {
     text-align: center;
     margin-bottom: 40px;
     color: #FFF;
 }
-section.sobre div.sobre-mestre img{
+
+section.sobre div.sobre-mestre img {
     border: 4px solid white;
 }
-section.sobre div.sobre-mestre h2{
+
+section.sobre div.sobre-mestre h2 {
     font-size: max(22px, 1.8vw);
     margin-top: 40px;
     text-align: center;
 }
 
-/* Além do horizente  */
-section.solucao{
+/* Além do horizontes - seção solucao */
+section.solucao {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -127,7 +132,8 @@ section.solucao{
     margin-bottom: 60px;
     background-color: black;
 }
-section.solucao h2{
+
+section.solucao h2 {
     margin-top: 40px;
     margin-bottom: 50px;
     max-width: 950px;
@@ -135,35 +141,40 @@ section.solucao h2{
     color: #FFF;
     font-size: max(22px, 2.8vw);
 }
-section.solucao div.solucao-mestre{
+
+section.solucao div.solucao-mestre {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin-bottom: 40px;
 }
-section.solucao div.solucao-mestre div.solucao-texto{
+
+section.solucao div.solucao-mestre div.solucao-texto {
     max-width: 800px;
     text-align: left;
     line-height: 1.8;
     margin-bottom: 20px;
 }
-section.solucao div.solucao-mestre div.solucao-texto p{
+
+section.solucao div.solucao-mestre div.solucao-texto p {
     width: 95%;
     margin: auto;
     color: #FFF;
     text-shadow: 2px 2px 5px #181717;
     font-size: max(16px, 1vw);
 }
-section.solucao div.solucao-mestre div.solucao-img{
+
+section.solucao div.solucao-mestre div.solucao-img {
     max-width: 400px;
 }
-section.solucao div.solucao-mestre div.solucao-img img{
+
+section.solucao div.solucao-mestre div.solucao-img img {
     max-width: 100%;
 }
 
-/*  SECTION MAKES-ETAPAS      */
-section.makes{
+/*  SECTION MAKES-ETAPAS */
+section.makes {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -177,11 +188,93 @@ section.makes{
     background-color: gray;
     color: #FFF;
 }
-section.makes h2{
+
+section.makes h2 {
     margin-top: 40px;
-    margin-bottom: 50px;
-    max-width: 850px;
-    font-size: max(22px, 2.8vw);
+    margin-bottom: 30px;
+    font-size: max(28px, 3vw);
     text-align: center;
     color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out;
+}
+
+section.makes p.lead {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+section.makes ol {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+section.makes .list-group-item {
+    background-color: #343a40;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+section.makes .list-group-item:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+section.makes .list-group-item i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Exemplo de ícones para as etapas */
+section.makes .list-group-item:nth-child(1) i::before {
+    content: "\f0c0"; /* Ícone de cartão SD */
+    font-family: "Font Awesome 5 Free";
+}
+
+section.makes .list-group-item:nth-child(2) i::before {
+    content: "\f11b"; /* Ícone de teclado */
+    font-family: "Font Awesome 5 Free";
+}
+
+section.makes .list-group-item:nth-child(3) i::before {
+    content: "\f0e7"; /* Ícone de cabo HDMI */
+    font-family: "Font Awesome 5 Free";
+}
+
+/* Melhorar o bloco de código */
+section.makes .list-group-item code {
+    background-color: #222;
+    color: #d1ecf1;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
